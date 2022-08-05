@@ -145,3 +145,34 @@ kubectl get pods
 kubectl get service
 kubectl run database-server-mariadb-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mariadb:10.6.8-debian-11-r22 --namespace default --command -- bash
 git branch
+git add .
+git status
+git commit -m "Commit kubectl new changes in config"
+git remote add origin https://github.com/rubikac22/Aug042022_Az204Training.git
+git push -u origin main
+git push main
+git push origin main
+cd eventa-app
+ls
+cd events-app/kube
+git branch
+git add .
+git commit -m "Commit kubectl new changes in config"
+git remote add origin https://github.com/rubikac22/Aug042022_Az204Training.git
+git push origin main
+mkdir terraformjenkins
+cd terraformjenkins
+wget https://storage.googleapis.com/roi-materials/main.tf
+terraform init
+terraform apply -auto-approve
+wget https://storage.googleapis.com/roi-materials/CND/GCP/Jenkinsfile
+kubectl get pods
+kubectl get pods
+kubectl get pods
+kubectl get pods
+wget https://storage.googleapis.com/roi-materials/CND/GCP/Jenkinsfile
+hemm uninstall database-server
+cd
+git init
+git add README.md
+git commit -m "first commit"
