@@ -101,3 +101,47 @@ git status
 git branch
 git pull main
 git pull
+git add .
+git commit -m "committing to main"
+git push origin main
+clear
+git init
+cd event-apps/kube
+cd events-app/kube
+git init
+git add .
+git commit -m "First Kube commit"
+git branch -M main
+git remote add origin https://github.com/rubikac22/Aug042022_Az204Training.git
+git push -u origin main
+helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo list
+helm search repo mariadb
+helm install database-server bitnami/mariadb
+kubectl get pods
+ROOT_PASSWORD=$(kubectl get secret --namespace default database-server-mariadb -o jsonpath="{.data.mariadb-root-password}" | base64 -d)
+$RooT_PASSWORD
+$ROOT_PASSWORD
+echo $ROOT_PASSWORD
+mysql -h database-server-mariadb.default.svc.cluster.local -uroot -p my_database
+mysql -h database-server-mariadb.default.svc.cluster.local -uroot -p my_database
+kubectl run database-server-mariadb-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mariadb:10.6.8-debian-11-r22 --namespace default --command -- bash
+kubectl get pods
+kubectl get pods
+kubectl run database-server-mariadb-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mariadb:10.6.8-debian-11-r22 --namespace default --command -- bash
+kubectl get pods
+kubectl apply -f internaldeployment.yaml
+cd events-app/kube
+kubectl apply -f internaldeployment.yaml
+kubectl get pods
+kubectl get service
+kubectl apply -f externaldeployment.yaml
+kubectl get pods
+kubectl get pods
+kubectl apply -f internaldeployment.yaml
+kubectl get pods
+kubectl get service
+kubectl get pods
+kubectl get service
+kubectl run database-server-mariadb-client --rm --tty -i --restart='Never' --image  docker.io/bitnami/mariadb:10.6.8-debian-11-r22 --namespace default --command -- bash
+git branch
