@@ -176,3 +176,28 @@ cd
 git init
 git add README.md
 git commit -m "first commit"
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rubikac22/AZ204-Aug2022TrainingCompleteData.git
+git push -u origin main
+git remote add origin https://github.com/rubikac22/AZ204-Aug2022TrainingCompleteData.git
+git push origin main
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rubikac22/AZ204-Aug2022TrainingCompleteData.git
+git push -u origin main
+git push origin main
+cd
+git init
+git status
+echo "# AZ204-Aug2022TrainingCompleteData" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rubikac22/AZ204-Aug2022TrainingCompleteData.git
+git push -u origin main
+clear
+git init
